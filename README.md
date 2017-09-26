@@ -1,5 +1,12 @@
 # FusionSeg: Learning to combine motion and appearance for fully automatic segmention of generic objects in videos 
 
+Fork that adds a post-processing DenseCRF stage to improve the accuracy of the segmentation. Also makes some minor improvements to the main scripts.
+
+Relies on Efficient Inference in Fully Connected CRFs with Gaussian Edge potentials (Krahenbuhl and Koltun).
+
+
+## Original repository
+
 The following repository contains pretrained models for FusionSeg video object segementation method.
 
 Please visit our [project page](http://vision.cs.utexas.edu/projects/fusionseg/) for the paper and visual results.

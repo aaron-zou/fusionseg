@@ -1,0 +1,6 @@
+# Generated files
+images/
+motion_images/
+appearance_stream.prototxt
+motion_stream.prototxt
+*.txt

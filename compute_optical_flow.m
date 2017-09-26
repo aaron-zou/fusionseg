@@ -19,13 +19,12 @@ for i=1:num_img
 		img1 = imread([image_dir image_names(i).name]);
 		img2 = imread([image_dir image_names(i+1).name]);
 	end
-	
+
 	[vx,vy,warpI2]=get_optical_flow(img1,img2);
 	flow(:,:,1)=vx;
 	flow(:,:,2)=vy;
 	flow_img = flowToColor(flow);
-	
+
 	flow_path = [flow_dir image_names(i).name(1:end-3) 'png'];
 	imwrite(flow_img,flow_path);
 end
-
