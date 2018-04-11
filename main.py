@@ -82,6 +82,9 @@ def run_model(model_type, ext):
         test_file.write(line + '\n')
     test_file.close()
 
+    print(test_file_path)
+    exit(0)
+
     # Run Caffe binary with model
     weight_file_path = model_dir + model_type + '_stream.caffemodel'
     cmd = caffe_binary + ' test --model=' + test_file_path + ' --weights=' + \
